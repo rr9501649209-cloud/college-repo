@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<meta name="description" content="A responsive website demonstrating web performance optimization and modern web development.">
+
+<title>My Website | Web Development</title>
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+
+<!-- Header -->
+<header class="header">
+    <h1>Welcome to My Website</h1>
+    <p>Learn, Explore and Build with Technology</p>
+</header>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Main Content -->
+<main>
+
+    <!-- Home Section -->
+    <section id="home" class="section hero">
+        <h2>Home</h2>
+        <p>
+            Welcome to our website! This project demonstrates responsive
+            web design, image lazy loading, and basic JavaScript.
+        </p>
+        <a href="#about" class="button">Explore More</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>
+            We build modern, responsive, and user-friendly websites
+            using HTML, CSS, and JavaScript. Our goal is to provide
+            a smooth experience across desktop and mobile devices.
+        </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+
+        <div class="services-container">
+
+            <article class="card">
+                <h3>Web Development</h3>
+                <p>Building responsive and accessible websites.</p>
+            </article>
+
+            <article class="card">
+                <h3>UI Design</h3>
+                <p>Creating clean and user-friendly interfaces.</p>
+            </article>
+
+            <article class="card">
+                <h3>Performance Optimization</h3>
+                <p>Improving loading speed and website performance.</p>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Image Gallery -->
+    <section id="gallery" class="section">
+        <h2>Image Gallery</h2>
+
+        <p>
+            The first image loads normally because it appears near
+            the top of the page. The remaining images use lazy loading.
+        </p>
+
+        <div class="gallery">
+
+            <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=75"
+                alt="Laptop on a desk displaying a development workspace"
+                width="600"
+                height="400"
+                fetchpriority="high">
+
+            <img
+                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=75"
+                alt="Team collaborating on a technology project"
+                width="600"
+                height="400"
+                loading="lazy">
+
+            <img
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=75"
+                alt="Computer circuit board"
+                width="600"
+                height="400"
+                loading="lazy">
+
+            <img
+                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=75"
+                alt="Laptop and digital workspace"
+                width="600"
+                height="400"
+                loading="lazy">
+
+            <img
+                src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=75"
+                alt="Programming code displayed on a screen"
+                width="600"
+                height="400"
+                loading="lazy">
+
+            <img
+                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=75"
+                alt="Digital network visualization"
+                width="600"
+                height="400"
+                loading="lazy">
+
+            <img
+                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=75"
+                alt="Server racks in a data center"
+                width="600"
+                height="400"
+                loading="lazy">
+
+            <img
+                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=75"
+                alt="People working together on computers"
+                width="600"
+                height="400"
+                loading="lazy">
+
+            <img
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=75"
+                alt="Electronic components used in computing"
+                width="600"
+                height="400"
+                loading="lazy">
+
+            <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=75"
+                alt="Web developer workspace"
+                width="600"
+                height="400"
+                loading="lazy">
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+
+        <p>Have a question? Send us a message.</p>
+
+        <form id="contactForm">
+            <label for="name">Your Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+                maxlength="100">
+
+            <label for="email">Your Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+                maxlength="254">
+
+            <label for="messageInput">Your Message</label>
+            <textarea
+                id="messageInput"
+                name="message"
+                placeholder="Write your message"
+                required
+                maxlength="1000"></textarea>
+
+            <button type="submit" class="button">Send Message</button>
+        </form>
+
+        <p id="responseMessage" role="status" aria-live="polite"></p>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2026 My Website. All rights reserved.</p>
+    <p>Built using HTML, CSS and JavaScript.</p>
+</footer>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
